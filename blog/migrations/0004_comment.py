@@ -24,4 +24,12 @@ class Migration(migrations.Migration):
                 ('post', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='comments', to='blog.post')),
             ],
         ),
+        migrations.AlterModelOptions(
+            name='comment',
+            options={'ordering': ['created_on']},
+        ),
+        migrations.AlterModelOptions(
+            name='post',
+            options={'ordering': ['-created_on']},
+        ),
     ]
