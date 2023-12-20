@@ -22,6 +22,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     '.gitpod.io',
     '.herokuapp.com',
+    '.127.0.0.1',
 ]
 
 
