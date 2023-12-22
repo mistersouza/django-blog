@@ -1,5 +1,6 @@
-import os
+from django.contrib.messages import constants as messages
 import dj_database_url
+import os
 from pathlib import Path
 
 if os.path.isfile('env.py'):
@@ -132,6 +133,10 @@ USE_I18N = True
 
 USE_TZ = True
 
+MESSAGE_TAGS = {
+    messages.SUCCESS: 'alert-success',
+    messages.ERROR: 'alter-danger',
+}
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/

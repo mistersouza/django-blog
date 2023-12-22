@@ -46,6 +46,10 @@ body {
     background-color: #188181;
 }
 
+.profile-image {
+    width:"75%"
+}
+
 .scale {
     width: 100%;
     height: auto;
